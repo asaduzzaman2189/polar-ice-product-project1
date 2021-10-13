@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Express Delight</title>
+  </head>
+  <body class="bg-light">
+    <!-- Header section start -->
+    <header>
+      <section class="container">
+        <div class="mt-5 img-fluid" style="width: 14rem">
+          <img
+            src="images/polar-ice-cream.png"
+            class="card-img-top"
+            alt="..."
+          />
+        </div>
+      </section>
+    </header>
+    <!-- Header section end -->
+    <main>
+      <!-- Form section start -->
+      <section class="container mt-5">
+        <div class="mb-3 row">
+          <label for="input-name" class="fs-6 col-sm-2 col-form-label">Name:</label>
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="input-name" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="input-phone" class="fs-6 col-sm-2 col-form-label"
+            >Phone/Mobile:</label
+          >
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="input-phone" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputEmail4" class="fs-6 col-sm-2 col-form-label"
+            >Email:</label
+          >
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail4" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputAddress" class="fs-6 col-sm-2 col-form-label"
+            >Home Address:</label
+          >
+          <div class="col-sm-4">
+            <input type="text" class="form-control" id="inputAddress" />
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="input-event" class="fs-6 col-sm-2 col-form-label"
+            >Event Type:</label
+          >
+          <div class="col-sm-4">
+            <select class="form-select" aria-label=".form-select-sm example">
+              <option selected>Wedding</option>
+              <option value="1">Birthday</option>
+              <option value="2">Anniversary</option>
+              <option value="3">Ceremony</option>
+              <option value="4">Get Together</option>
+              <option value="5">Reunion</option>
+              <option value="6">Conference</option>
+              <option value="7">Meeting</option>
+              <option value="8">Picnic</option>
+              <option value="9">Party</option>
+              <option value="10">Family Party</option>
+              <option value="11">Other</option>
+            </select>
+          </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="start" class="fs-6 col-sm-2 col-form-label"
+              >Event Date:</label
+            >
+            <div class="col-sm-4">
+              <input
+                type="date"
+                name="trip-start"
+                class="form-control"
+                id="start"
+              />
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="input-venue" class="fs-6 col-sm-2 col-form-label"
+              >Venue:</label
+            >
+            <div class="col-sm-4">
+              <input type="text" class="form-control" id="input-venue" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Form section end -->
+
+    <!-- Table price section start -->
+    <section class="container mt-5">
+    <table class="table table-bordered">
+      <thead class="bg-danger text-white">
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Product Type</th>
+          <th scope="col">Quantity (in Box)</th>
+          <th scope="col">Box Price</th>
+          <th scope="col">Requirement
+            (Box)</th>
+          <th scope="col">Item Quantity</th>
+          <th scope="col">Item Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4" scope="row">Item 1 CONE</td>
+          <td>Chocodelight 120ml</td>
+          <td>12 x 1</td>
+          <td>Tk 540/-</td>
+          <td>
+            <input id="box-1" type="number" min="1" max="300" value="1">
+          </td>
+          <td><span id="quantity-1">0</span></td>
+          <td><span id="item-price-1">0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Carnival Vanilla 120ml</td>
+          <td>12 x 1</td>
+          <td>Tk 540/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Carnival Strawberry 120ml	</td>
+          <td>12 x 1</td>
+          <td>Tk 600/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Carnival Butterscotch 120ml	</td>
+          <td>12 x 1</td>
+          <td>Tk 600/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row" rowspan="5">Item 2
+
+            CUP - Regular</td>
+          <td>Mango 100ml</td>
+          <td>18 x 1</td>
+          <td>Tk 360/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Vanilla 100ml</td>
+          <td>18 x 1</td>
+          <td>Tk 360/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Strawberry 100ml</td>
+          <td>18 x 1</td>
+          <td>Tk 360/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Twinee Ripple Cup 100ml (Vanilla with Strawberry)</td>
+          <td>18 x 1</td>
+          <td>Tk 450/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Twinee Ripple Cup 100ml (Chocolate with Caramel)</td>
+          <td>18 x 1</td>
+          <td>Tk 450/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Item 3 STICKS</td>
+          <td>Chocobar 72ml (Vanilla & Chocolate)</td>
+          <td>24 x 1</td>
+          <td>Tk 600/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row" rowspan="3">	Item 4 CUP - Premium</td>
+          <td>Kheer 110ml</td>
+          <td>12 x 1</td>
+          <td>Tk 540/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Doi 110ml</td>
+          <td>12 x 1</td>
+          <td>Tk 540/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td scope="row">Chocolate Prime 110ml</td>
+          <td>12 x 1</td>
+          <td>Tk 540/-</td>
+          <td>
+            <input type="number" min="1" max="300" value="1">
+          </td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td class="fs-5 text-center" scope="row" rowspan="3" colspan="4">* All prices are in BDT</td>
+          <td class="fw-bold fs-6">* TOTAL</td>
+          <td><span>0</span></td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td class="fw-bold fs-6" colspan="2" scope="row">* Discount (15%)</td>
+          <td><span>0.00</span></td>
+        </tr>
+        <tr>
+          <td class="fw-bold fs-6" scope="row"  colspan="2">* PAYABLE to POLAR</td>
+          <td><span>0.00</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>If you have other preferences please contact +8801990777888 from 10.00 AM - 10.00 PM</p>
+    <button type="button" class="float-end btn btn-danger">Submit</button>
+  </section>
+    <!-- Table price section end -->
+    </main>
+
+    <footer></footer>
+
+    <!--js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
