@@ -28,14 +28,14 @@ function box(n, quantity) {
 
   function discount() {
     const discount15 = parseFloat(getTotalItemPrice.innerText) * 0.15;
-    return discount15;
+    return discount15.toFixed(2);
   }
 
   function payable() {
     const pay =
       parseFloat(getTotalItemPrice.innerText) -
       parseFloat(getDiscount.innerText);
-    return pay;
+    return pay.toFixed(2);
   }
 
   getDiscount.innerText = discount();
