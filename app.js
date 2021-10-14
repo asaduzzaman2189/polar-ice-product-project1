@@ -1,6 +1,4 @@
 function box(n, quantity) {
-  console.log(n, quantity);
-
   const quantityText = document.getElementById("quantity-" + n);
   const boxPrice = document.getElementById("box-price-" + n);
   const itemQuantity = document.getElementById("total-quantity-" + n);
@@ -13,15 +11,12 @@ function box(n, quantity) {
 
   const quantityValue = parseInt(quantityText.innerText);
   itemQuantity.innerText = quantity * quantityValue;
-  console.log(itemQuantity.innerText);
 
   const previousBoxPriceText = boxPrice.innerText;
   const boxPriceValue = parseInt(previousBoxPriceText);
-  console.log(boxPriceValue);
 
   const totalItemPrice = parseInt(quantity) * boxPriceValue;
   itemPrice.innerText = totalItemPrice;
-  console.log(itemPrice.innerText);
 
   getTotalQuantity.innerText = updateTotalItemQuantity();
   getTotalItemPrice.innerText = updateTotalItemPrice();
